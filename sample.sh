@@ -11,5 +11,8 @@ set -o pipefail       # pipe will exit with last non-zero status if applicable
 TABS=tabs_recent.txt
 # TABS=tabs.txt
 
-head -7 ~/d/00_Metadata/$TABS | xargs -n1 -t sh xdg-open
+WIN=~/d/35_Linux_Software/bin/wsl-open.sh
+UNX=xdg-open
+
+head -7 ~/d/00_Metadata/$TABS | xargs -n1 -P 12 -t sh $WIN
 sed -i -e 1,7d ~/d/00_Metadata/$TABS
