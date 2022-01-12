@@ -14,5 +14,5 @@ TABS=tabs_recent.txt
 WIN=~/d/35_Linux_Software/bin/wsl-open.sh
 UNX=xdg-open
 
-head -7 ~/d/00_Metadata/$TABS | xargs -n1 -P 12 -t sh $WIN
+head -7 ~/d/00_Metadata/$TABS | xargs -n1 -P 12 -t sh $UNX
 sed -i -e 1,7d ~/d/00_Metadata/$TABS

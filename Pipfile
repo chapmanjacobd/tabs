@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 rich = "*"
+praw = "*"
+joblib = "*"
+pandas = "*"
 
 [dev-packages]
 black = "*"
